@@ -1,13 +1,16 @@
+
+
+
+
+body {
+  color: pink;
+}
+
 h1 {
-    text-align: center;
-    text-transform: uppercase;
-    color:white ;
-  }
-  
-  p {
-    text-indent: 30px;
-    text-align: center;
-    letter-spacing: 3px;
-  }
+  color: white;
+}
+
+
+
   
   
