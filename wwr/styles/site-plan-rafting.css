@@ -6,9 +6,9 @@ Fonts are separated by a & */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #396E94   ;
-  --secondary-color: #E7C24F ;
-  --accent1-color: #A42212;
+  --primary-color: #134266;
+  --secondary-color: #e7c24f;
+  --accent1-color: #fce172;
   --accent2-color: white;
 
   /* change the values below to your chosen font(s) */
@@ -61,10 +61,10 @@ header {
   background-color: var(--paragraph-background-color);
 }
 header > h1, header > h2 {
-  color: var(--headline-color-on-color);
+  color: var(white);
 }
 p {
-  font-family: var(--paragraph-font);
+  font-family: var(Raleway, Arial, sans-serif);
   color: var(--paragraph-color);
   padding: 1em;
 }
@@ -82,16 +82,16 @@ p {
   height: 3em;
 }
 .primary {
-  background-color: var(--primary-color);
+  background-color: var(#134266)
 }
 .secondary {
-  background-color: var(--secondary-color);
+  background-color: var(#e7c24f);
 }
 .accent1 {
-  background-color: var(--accent1-color);
+  background-color: var(#fce172);
 }
 .accent2{
-  background-color: var(--accent2-color);
+  background-color: var(#ffffff);
 }
 p.colored {
   background-color: var(--paragraph-background-color);
