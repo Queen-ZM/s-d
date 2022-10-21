@@ -165,9 +165,7 @@ nav a:hover {
 }
 
 /* Activity 1 styles */
-    .content1 {
-        /* This is the parent of the activity 1 boxes. */
-    }
+    
     .red1 { 
     width: 100px; 
     height: 100px; 
@@ -188,10 +186,7 @@ nav a:hover {
     height: 100px; 
     background-color: blue; 
     } 
-     /* Activity 2 styles */ 
-    .content2 {
-        /* This is the parent of the activity 2 boxes. */
-    }
+    
     .red2 {
     width: 100px; 
     height: 100px; 
@@ -212,10 +207,7 @@ nav a:hover {
     height: 100px; 
     background-color: blue; 
     } 
-     /* Activity 3 styles */ 
-    .content3 {
-        /* This is the parent of the activity 3 boxes. */
-    }
+
     .red3 {
     width: 100px; 
     height: 100px; 
@@ -288,10 +280,7 @@ nav a:hover {
     height: 100px; 
     background-color: blue; 
      } 
-     /* Activity 6 styles */ 
-     .content6 {
-        /* This is the parent of the activity 6 boxes. */
-    }
+  
     .red6 {
     width: 100px; 
     height: 100px; 
