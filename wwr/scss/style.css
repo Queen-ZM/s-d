@@ -1,0 +1,32 @@
+/*Home page scc page*/
+
+body {
+  background-color:lightblue;
+  font-family: "Sofia", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+h2 {
+  color: white;
+  text-align: center
+}
+h3 {
+  color: white
+}
+
+a {
+  text-align: center
+}
+nav {
+  text-align: inherit;
+  background-size: 33%;
+}
+div {
+  background-color: aqua;
+  
+}
+
