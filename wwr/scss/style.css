@@ -1,32 +1,88 @@
 /*Home page scc page*/
-
+header {
+  display: grid;
+  grid-template-columns: 150px auto;
+}
 body {
-  background-color:lightblue;
-  font-family: "Sofia", Arial, Helvetica, sans-serif;
+  display: grid;
+  background-color: grey;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
 h1 {
-  color: white;
+  color: whitesmoke;
   text-align: center;
 }
 h2 {
-  color: white;
-  text-align: center
+  color: whitesmoke;
+  text-align: center;
 }
 h3 {
-  color: white
+  color: whitesmoke;
 }
-
-a {
-  text-align: center
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  float: right;
 }
 nav {
-  text-align: inherit;
-  background-size: 33%;
+  display: flex;
+  justify-content: space-around;
+  background: #d9c2a3;
+  width: 100%;
+  overflow: auto;
+
 }
-div {
-  background-color: aqua;
-  
+nav a {
+  width: 200;
+  text-align: right;
+  font-size: 17px;
+  color: whitesmoke;
+  padding: 20px 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav a:hover {
+  background-color:  skyblue;
+  color: black;
+}
+
+.hero {
+  width: 200%;
+  overflow: auto;
+}
+.card-imgb{
+  border: 10px solid #d9c2a3;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+
+.msg {
+  background-color: #6f7364;
+  padding: 35px;
+  grid-column: 6/10;
+  grid-row: 6/7;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+.mountains {
+  width: 100%;
+  grid-column: 2/7;
+  grid-row: 5/8;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+.book {
+
+}
+footer {
+  background-color: #6f7364;
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
