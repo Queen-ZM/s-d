@@ -10,6 +10,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
+.div {
+  background-image: url("wwr/images/hero.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
 
 h1 {
   color: whitesmoke;
@@ -74,9 +80,7 @@ nav a:hover {
   grid-row: 5/8;
   box-shadow: 5px 5px 10px #6f7364;
 }
-.book {
 
-}
 footer {
   background-color: #6f7364;
   padding: 25px 50px;
