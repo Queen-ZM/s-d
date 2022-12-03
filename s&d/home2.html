@@ -4,54 +4,318 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Kids and Adults</title>
 </head>
-<body>
-    <hearder>
-        <a id="logo_link"  href="index.html">
-            <img src="images/sad.jpg" class="logo" alt="s&d-logo" width="100px" height="100px">
-       </a>
-    <nav>
-            <a href="index.html">Site Plan</a>
-            <a href="home.html">Home</a>
-            <a href="home3.html">Weddings</a>
-            <a href="#">Contact Us</a>
-        </nav>
-    </hearder>
-    <main>
-        <h2>We enjoy working with everyone from old to the young one's.</h2>
-        <section>
-            <img class="white dress" src="images/IMG-20221105-WA0049.jpg" alt="river in forest">
-            
-
-            <img class="dresses" src="images/IMG-20221105-WA0019.jpg" alt="tent in the mountain">
-        
-        
-            <img class="couple in white" src="images/IMG-20221105-WA0022.jpg" alt="rafting boat">
-
-            
-            <img class="tradional dress" src="images/IMG-20221105-WA0053.jpg" alt="Misty mountains">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .body {
+        font-family: 'Tangerine', serif;
+        font-size: 48px;
+        text-shadow: 4px 4px 4px #aaa;
+        background-color: radial-gradient(#fff, #ffd6d6);
+    }
+    .logo{
+        clip-path: circle();
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        padding: 20px
+    }
+    nav{
+        flex: 1;
+        text-align: right;
+    }
+    nav ul{
+        display: inline-block;
+        list-style-type: none;
+    }
+    nav ul li{
+        display: inline-block;
+        margin-right: 50px;
+    }
     
-            
-        </section>
-       
-        <footer>
-            <p><a href="index.html">Site Plan</a></p>
-            <p><a href="home.html">Home</a></p>
-            <p><a href="home3.html">Weddings</a></p>
-            <p><a href="#">Contact Us</a></p>
-            <div class="social">
-                <a href="https://facebook.com">
-                    <img src="images/facebook.png" alt="fb icon">
-                </a>
-                <a href="https://twitter.com">
-                    <img src="images/twitter.png" alt="twitter icon">
-                </a>
-                <a href="https://instagram.com">
-                    <img src="images/instagram.png" alt="instagram icon">
-                </a>  
-                <p>Spokie and Daughters &copy; 2022 - Noluthando Zilimbola-Mothata</p>  
+    
+/*------------- all products page -------------------*/
+    .categories{
+        margin: 70px 0;
+    }
+    .small-container{
+        max-width: 1080px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+
+    }
+    .col-4{
+        flex-basis: 25%;
+        padding: 10px;
+        min-width: 200px;
+        margin-bottom: 50px;
+        transition: transform(-0.5s);
+    }
+    .col-4 img{
+        width: 100%;
+    }
+    .col-4 p{
+        font-size: 14px;
+    }
+    .col-4:hover{
+        transform: translateY(-5px);
+    }
+    
+/*--------------- footer-------------------*/
+    .inner-footer{
+        margin: 0;
+        padding: 0;
+        background-color: #a3769e;
+    }
+    .social-items{
+        padding: none;
+    }
+    .social-items a{
+        padding: 10px 20px;
+        font-size: 35px;
+
+    }
+    .quick-links{
+        display: flex;
+    }
+    .quick-links ul{
+        display: flex;
+    }
+    .quick-items{
+        list-style: none;
+    }
+    .quick-items a{
+        text-decoration: none;
+        padding: 0px 15px;
+        font-size: 18px;
+        color: whitesmoke;
+    }
+
+
+</style>
+
+
+<body>
+   
+        <div class="container">
+         <div class="navbar">
+            <div class="logo">
+               <img src="images/sad.jpg" width="125px" >
+       </div>
+       <nav>
+           <ul id="Menuitems">
+               <li><a href="index.html">Site Plan</a></li>
+               <li><a href="home.html">Home</a></li>
+               <li><a href="home3.html">Weddings</a></li>
+               <li><a href="#">Contact Us</a></li>
+           </ul>
+        </nav>
+        <img src="images/icon.png" with="30px" height="30px">
+    </div>
+   </div>
+
+    <div class="small-container">
+
+        <div class="row row-2">
+            <h2>All Products</h2>
+        </div>
+        <selection>
+            <option>Default Shortind</option>
+            <option>Kids</option>
+            <option>Woman</option>
+            <option>Man</option>
+            <option>Family</option>
+        </selection>
+
+    <!--------- featured products ---------------->
+    <div class="categories">
+        <div class="small-container">
+            <h2 class="title">Featured Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/IMG-20221105-WA0048.jpg">
+                    <h4>Xhosa Skirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i cass="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$10.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/kid4.jfif">
+                    <h4>Xhosa Skirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i cass="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$15.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/kid5.jfif">
+                    <h4>Xhosa Skirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i cass="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$25.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/kid3.jfif">
+                    <h4>Xhosa Skirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i cass="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$35.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/man3.jfif">
+                    <h4>Xhosa Skirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i cass="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/IMG-20221105-WA0034.jpg">
+                    <h4>Xhosa Skirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i cass="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$20.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/IMG-20221105-WA0053.jpg">
+                    <h4>Xhosa Skirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i cass="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$130.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/IMG-20221105-WA0024.jpg">
+                    <h4>Xhosa Skirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i cass="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$100.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/IMG-20221105-WA0032.jpg">
+                    <h4>Xhosa Skirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i cass="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$75.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/family1.jfif">
+                    <h4>Xhosa Skirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i cass="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$150.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/family.jfif">
+                    <h4>Xhosa Skirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i cass="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$120.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/IMG-20221105-WA0052.jpg">
+                    <h4>Xhosa Skirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i cass="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$100.00</p>
+                </div> 
             </div>
+            <div class="page-btn">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span> &#8594; </span>
+            </div>
+        </div>
+<!----------------------- footer -------------------------->      
+<div class="footer">
+    <div class="inner-footer">
+    <div class="quick-links">
+        <ul>
+            <li class="quick-items"><a href="index.html">Site Plan</a></p>
+            <li class="quick-items"><a href="home.html">Home</a></p>
+            <li class="quick-items"><a href="home3.html">Weddings</a></p>
+            <li class="quick-items"><a href="#">Contact Us</a></p>
+        </ul>
+    </div>
+    <a href="https://facebook.com">
+        <img src="images/facebook.png" alt="fb icon">
+    </a>
+    <a href="https://twitter.com">
+        <img src="images/twitter.png" alt="twitter icon">
+    </a>
+    <a href="https://instagram.com">
+        <img src="images/instagram.png" alt="instagram icon">
+    </a>  
+    <p>Spokie and Daughters &copy; 2022 - Noluthando Zilimbola-Mothata</p>  
+</div>
+</footer>
     
 </body>
 </html>

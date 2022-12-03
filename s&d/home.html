@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     <title>Home</title>
 <style>
     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+    .body {
+        font-family: 'Tangerine', serif;
+        font-size: 48px;
+        text-shadow: 4px 4px 4px #aaa;
     }
     .logo{
         clip-path: circle();
@@ -63,6 +69,79 @@
         transition: .5s ease;
         backface-visibility: hidden;
     }
+    .col-2 h1{
+        font-size: 50px;
+        line-height: 60px;
+        margin: 25px 0;
+    }
+    .header{
+        background: radial-gradient(#fff, #ffd6d6);
+    }
+    .header .row{
+         margin-top: 70px;
+    }
+    .categories{
+        margin: 70px 0;
+    }
+    .col-3{
+        flex-basis: 30%;
+        min-width: 250px;
+        margin-bottom: 30px;
+    }
+    .col-3 img{
+        width: 100%;
+    }
+    .small-container{
+        max-width: 1080px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+
+    }
+    .col-4{
+        flex-basis: 25%;
+        padding: 10px;
+        min-width: 200px;
+        margin-bottom: 50px;
+        transition: transform(-0.5s);
+    }
+    .col-4 img{
+        width: 100%;
+    }
+    .title{
+        text-align: center;
+        margin: 0 auto 80px;
+        position: relative;
+        line-height: 60px;
+        color: #555;
+    }
+    title::after{
+        content: "";
+        background: #ff523b;
+        width: 80px;
+        height: 5px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .h4{
+        color: #555;
+        font-weight: normal;
+    }
+    .col-4 p{
+        font-size: 14px;
+    }
+    .col-4:hover{
+        transform: translateY(-5px);
+    }
+    .rating .fa{
+       color: #ff523b; 
+    }
+    p{
+        color: rgb(123, 116, 116);
+    } 
     .middle{
         transition: .5s ease;
         opacity: 0;
@@ -85,25 +164,7 @@
         font-size: 16px;
         padding: 16px 32px;
     }
-    .col-2 h1{
-        font-size: 50px;
-        line-height: 60px;
-        margin: 25px 0;
-    }
-    .header{
-        background: radial-gradient(#fff,#987777);
-    }
-    .categories{
-        margin: 70px 0;
-    }
-    .col-3{
-        flex-basis: 30%;
-        min-width: 250px;
-        margin-bottom: 30px;
-    }
-    .col-3 img{
-        width: 100%;
-    }
+
     .small-container{
         max-width: 1080px;
         margin: auto;
@@ -112,20 +173,25 @@
 
     }
     p{
-        color: whitesmoke;
+        color: rgb(123, 116, 116);
     }
     .inner-footer{
         margin: 0;
         padding: 0;
         background-color: #a3769e;
     }
+    .social-links{
+        display: flex;
+    }
+    .social-links ul{
+        display: flex;
+    }
     .social-items{
-        padding: none;
+        list-style: none;
     }
     .social-items a{
         padding: 10px 20px;
         font-size: 35px;
-
     }
     .quick-links{
         display: flex;
@@ -133,16 +199,24 @@
     .quick-links ul{
         display: flex;
     }
+
     .quick-items{
         list-style: none;
-    }
+    } 
     .quick-items a{
         text-decoration: none;
         padding: 0px 15px;
         font-size: 18px;
-        color: whitesmoke;
+        color: #fff;
+    } 
+    .outer-footer{
+        padding: 10px;
+        text-align: center;
+        color: black;
+        font-size: 18px;
+        background-color: #a3769e;
     }
-    
+
 
 
 
@@ -171,7 +245,7 @@
                <li><a href="#">Contact Us</a></li>
            </ul>
         </nav>
-
+        <img src="images/icon.png" with="30px" height="30px">
     </div>
     <div class="row">
         <div class="col-2">
@@ -188,10 +262,10 @@
                 </div>
             </div>
         </div>
-       </div>
-    </div>
-
-    <!-------- featured categories -------->
+     </div>
+  
+     
+<!------------------ featured categories ---------------------->
     <div class="categories">
         <div class="small-container">
             <div class="row">
@@ -206,33 +280,133 @@
             </div>
           </div>
          </div>
+
+    </div>
+<!----------------------- featured products ------------------------>
+    <div class="small-container">
+        <h2 class="title">Featured Product</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/IMG-20221105-WA0023.jpg" width="250px" height="300px">
+                <h4>Bridal Dress</h4>
+                <div class="rating" aria-hidden></div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <p>$150.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/IMG-20221105-WA0039.jpg" width="250px" height="300px">
+                <h4>Couples Wear</h4>
+                <div class="rating" aria-hidden></div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <p>$110.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/IMG-20221105-WA0027.jpg" width="250px" height="300px">
+                <h4>All in one for Females</h4>
+                <div class="rating" aria-hidden></div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <p>$85.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/kid3.jfif" width="250px" height="300px">
+                <h4>Kids dresses</h4>
+                <div class="rating" aria-hidden></div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <p>$20.00</p>
+            </div>
+        </div>
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/IMG-20221105-WA0002 - Copy.jpg" width="250px" height="300px">
+                <h4>Semiformal Dress</h4>
+                <div class="rating" aria-hidden></div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <p>$20.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/IMG-20221105-WA0041.jpg" width="250px" height="300px">
+                <h4>Couples</h4>
+                <div class="rating" aria-hidden></div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <p>$70.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/kid.jfif" width="250px" height="300px">
+                <h4>Kiddies Dress</h4>
+                <div class="rating" aria-hidden></div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <p>$15.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/IMG-20221105-WA0019.jpg" width="250px" height="300px">
+                <h4>Female Blazer</h4>
+                <div class="rating" aria-hidden></div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <p>$60.00</p>
+            </div>
+
     </div>
 
-    <h3>Spokie and Daughters believe that clothes are more than just that, they are a life style<br>and they not only Cover Us even so 
+    <!----Spokie and Daughters believe that clothes are more than just that, they are a life style<br>and they not only Cover Us even so 
         they set the mood of the day and that 
-        is why we say came and Feel like an African Royal.</h3>
+        is why we say came and Feel like an African Royal.----->
 
-    <!------------------- footer ---------------------->
+<!----------------------------- footer ------------------------------>
      <div class="footer">
         <div class="inner-footer">
-        <div class="quick-links">
-            <ul>
-                <li class="quick-items"><a href="index.html">Site Plan</a></p>
-                <li class="quick-items"><a href="home2.html">Kids and Audults</a></p>
-                <li class="quick-items"><a href="home3.html">Weddings</a></p>
-                <li class="quick-items"><a href="#">Contact Us</a></p>
+            <div class="social-links">
+                <ul>
+                    <li class="social-item"><a href="https://facebook.com"><img src="images/facebook.png" alt="fb icon"></i></a></li>
+                    <li class="social-item"><a href="https://twitter.com"><img src="images/twitter.png" alt="twitter icon"></i></a></li>
+                    <li class="social-item"><a href="https://instagram.com"> <img src="images/instagram.png" alt="instagram icon"></i></a></li>
+                </ul>
+            </div>
+        
+            <div class="quick-links">
+                <ul>
+                    <li class="quick-items"><a href="index.html">Site Plan</a></p>
+                    <li class="quick-items"><a href="home2.html">Kids and Audults</a></p>
+                    <li class="quick-items"><a href="home3.html">Weddings</a></p>
+                    <li class="quick-items"><a href="#">Contact Us</a></p>
             </ul>
         </div>
-        <a href="https://facebook.com">
-            <img src="images/facebook.png" alt="fb icon">
-        </a>
-        <a href="https://twitter.com">
-            <img src="images/twitter.png" alt="twitter icon">
-        </a>
-        <a href="https://instagram.com">
-            <img src="images/instagram.png" alt="instagram icon">
-        </a>  
-        <p>Spokie and Daughters &copy; 2022 - Noluthando Zilimbola-Mothata</p>  
+    </div>
+    
+    <div class="outer-footer">
+        Spokie and Daughters &copy; 2022 - Noluthando Zilimbola-Mothata 
     </div>
 </footer>
 </hearder>
@@ -240,7 +414,7 @@
 </html>
 
     
-
+  
 
             
 
