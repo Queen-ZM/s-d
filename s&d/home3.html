@@ -4,66 +4,437 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weddings</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <title>Wedding</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .body {
+        font-family: 'Tangerine', serif;
+        font-size: 48px;
+        text-shadow: 4px 4px 4px #aaa;
+    }
+    .logo{
+        clip-path: circle();
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        padding: 20px
+    }
+    nav{
+        flex: 1;
+        text-align: right;
+    }
+    nav ul{
+        display: inline-block;
+        list-style-type: none;
+    }
+    nav ul li{
+        display: inline-block;
+        margin-right: 50px;
+    }
+    a{
+        text-decoration: none;
+        color: #555;
+    }
+    p{
+        color: #555;
+    }
+    .container{
+        max-width: 1300px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .col-2{
+        flex-basis: 50%;
+        min-width: 300px;
+    }
+    .col-2 img{
+        max-width: 100%;
+        padding: 50px 0;
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+    .col-2 h1{
+        font-size: 50px;
+        line-height: 60px;
+        margin: 25px 0;
+    }
+    .header{
+        background: radial-gradient(#fff, #ffd6d6);
+    }
+    .header .row{
+         margin-top: 70px;
+    }
+    .categories{
+        margin: 70px 0;
+    }
+    .col-3{
+        flex-basis: 30%;
+        min-width: 250px;
+        margin-bottom: 30px;
+    }
+    .col-3 img{
+        width: 100%;
+    }
+    .small-container{
+        max-width: 1080px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+
+    }
+    .col-4{
+        flex-basis: 25%;
+        padding: 10px;
+        min-width: 200px;
+        margin-bottom: 50px;
+        transition: transform(-0.5s);
+    }
+    .col-4 img{
+        width: 100%;
+    }
+    .title{
+        text-align: center;
+        margin: 0 auto 80px;
+        position: relative;
+        line-height: 60px;
+        color: #555;
+    }
+    title::after{
+        content: "";
+        background: #ff523b;
+        width: 80px;
+        height: 5px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .h4{
+        color: #555;
+        font-weight: normal;
+    }
+    .col-4 p{
+        font-size: 14px;
+    }
+    .col-4:hover{
+        transform: translateY(-5px);
+    }
+    p{
+        color: rgb(123, 116, 116);
+    } 
+    .middle{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(50%, 50%);
+        -ms-transform: translate(50%, 50%);
+        text-align: center;
+    }
+    .col-2:hover .image {
+        opacity: 0.3;
+    }
+    .col-2:hover .middle{
+        opacity: 1;
+    }
+    .text{
+        background-color: #04a;
+        color: whitesmoke;
+        font-size: 16px;
+        padding: 16px 32px;
+    }
+
+    .small-container{
+        max-width: 1080px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+
+    }
+    p{
+        color: rgb(123, 116, 116);
+    }
+
+    /*---------single product details ----------*/
+
+    .single-product{
+        margin-top: 80px;
+    }
+    .single-product .col-2 img{
+        padding: 0;
+    }
+    .single-product .col-2 img{
+       padding: 20px; 
+    }
+    .single-product h4{
+        margin: 20px 0;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .single-product select{
+        display: block;
+        padding: 10px;
+        margin-top: 20px;
+        border: solid #ff523b;
+        outline: none;
+    }
+    .single-product input{
+        width: 50px;
+        height: 40px;
+        padding-left: 10px;
+        font-size: 20px;
+        margin-right: 10px;
+        border: 1px solid #ff523b;
+    }
+    input:focus{
+        outline: none;
+    }
+
+    .small-img-row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .small-img-row col{
+        flex-basis: 24%;
+        cursor: pointer;
+    }
+
+
+
+/*------------footer ----------*/
+
+    .inner-footer{
+        margin: 0;
+        padding: 0;
+        background-color: #a3769e;
+    }
+    .social-links{
+        display: flex;
+    }
+    .social-links ul{
+        display: flex;
+    }
+    .social-items{
+        list-style: none;
+    }
+    .social-items a{
+        padding: 10px 20px;
+        font-size: 35px;
+    }
+    .quick-links{
+        display: flex;
+    }
+    .quick-links ul{
+        display: flex;
+    }
+
+    .quick-items{
+        list-style: none;
+    } 
+    .quick-items a{
+        text-decoration: none;
+        padding: 0px 15px;
+        font-size: 18px;
+        color: #fff;
+    } 
+    .outer-footer{
+        padding: 10px;
+        text-align: center;
+        color: black;
+        font-size: 18px;
+        background-color: #a3769e;
+    }
+/*------------media query for less than 600 screen size ------*/
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+    .single-product .h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+</style>
 </head>
 <body>
-    <hearder>
-        <a id="logo_link"  href="index.html">
-            <img src="images/sad.jpg" class="logo" alt="s&d-logo" width="100px" height="100px">
-       </a>
-    <nav>
-            <a href="index.html">Site Plan</a>
-            <a href="home.html">Home</a>
-            <a href="home2.html">Kids and Adults</a>
-            <a href="#">Contact Us</a>
+        <div class="header">
+        <div class="container">
+        <div class="navbar">
+            <div class="logo">
+            <img src="images/sad.jpg" width="125px" >
+       </div>
+       <nav>
+           <ul>
+               <li><a href="index.html">Site Plan</a></li>
+               <li><a href="home.html">Home</a></li>
+               <li><a href="home2.html">Kids and Adults</a></li>
+               <li><a href="#">Contact Us</a></li>
+           </ul>
         </nav>
-        
-        <main class="row">
-            <main class="column">
-            <section class="model">
-                <img class="white dress" src="images/IMG-20221105-WA0010.jpg" alt="river in forest">
-                
-        
-            </section>
-            <main class="column">
-            <section class="dresses on stand">
-                <img class="dresses" src="images/IMG-20221105-WA0015.jpg" alt="tent in the mountain">
-                
-            </section>
-            <main class="column">
-            <section class="couple">
-                <img class="couple in white" src="images/IMG-20221105-WA0012.jpg" alt="rafting boat">
+        <img src="images/icon.png" with="30px" height="30px">
+    </div>
     
+            </div>
+        </div>
+     </div>
+  
+<!----------------------- singlenproducts details ------------------------>
+        
+        <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/IMG-20221105-WA0017.jpg" width="100%" id="product-img">
+            
+            <div class="small-img-row">
+              <div class="small-img-row-col">
+                <img src="images/bride3.jfif" width="100%" class="small-img">
+              </div>
+              <div class="small-img-row-col">
+                <img src="images/bride3.jfif" width="100%" class="small-img">
+              </div>
+              <div class="small-img-row-col">
+                <img src="images/bride3.jfif" width="100%" clas="small-img">
+              </div>
+              <div class="small-img-row-col">
+                <img src="images/bride3.jfif" width="100%" class="small-img">
+              </div>
+            </div>
+
+
+
+
                 
-            </section>
-            <img class="tradional dress" src="images/IMG-20221105-WA0050 - Copy - Copy.jpg" alt="Misty mountains">
-            <section class="msg">
-                <h2>More Than Just Clothing and Beauty</h2>
-                <p>Join a company that cares about your and your loved one, we are looking forward in working with you as you take your step to your new life 
-                    and you say 'I do to your spouse with western or tradiyional attire.' </p>
-                <a class='Contact Us'  href="contuct.html"> Contact Us</a>   
-                <button type="button">Contact Us</button>
                 
-            </section>
-           
-            <footer>
-                <p><a href="index.html">Site Plan</a></p>
-                <p><a href="home.html">Home</a></p>
-                <p><a href="home2.html">Kids and Adults</a></p>
-                <p><a href="#">Contact Us</a></p>
-                <div class="social">
-                    <a href="https://facebook.com">
-                        <img src="images/facebook.png" alt="fb icon">
-                    </a>
-                    <a href="https://twitter.com">
-                        <img src="images/twitter.png" alt="twitter icon">
-                    </a>
-                    <a href="https://instagram.com">
-                        <img src="images/instagram.png" alt="instagram icon">
-                    </a>  
-                    <p>Spokie and Daughters &copy; 2022 - Noluthando Zilimbola-Mothata</p>  
-                </div>
-            </footer>
-    </hearder>
+            </div>
+        <div class="col-2">
+            <p>Home /Wedding Dress</p>
+            <h1>Traditional Wedding Dress by S&D</h1>
+            <p>$200.00</p>
+            <select>
+                <option>Select size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+                <option>XL</option>
+                <option>XXL</option>
+            </select>
+            <input type="number"value="1">
+            <a href="" class="btn">Add To Cart</a>
+
+            <h3>Product Details</h3>
+            <br>
+            <p>Have your dream day in a dress tha not only make you look good even so 
+                it shows who you are.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!----------------- tittle --------------------->
+    <div class="small-container">
+        <div class="row-2">
+            <h2>Related Product</h2>
+            <p>View More</p>
+        </div>
+    </div>
+
+<!----------------- products --------------------->
+    <div class="small-container">
+
+        <div class="row">
+            <div class="col-4">
+                <img src="images/IMG-20221105-WA0023.jpg" width="250px" height="300px">
+                <h4>Bridal Dress</h4>
+                <p>$150.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/IMG-20221105-WA0039.jpg" width="250px" height="300px">
+                <h4>Couples Wear</h4>
+                <p>$110.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/IMG-20221105-WA0034.jpg" width="250px" height="300px">
+                <h4>All in one for Females</h4>
+                <div class="rating" aria-hidden></div>
+                
+                <p>$85.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/kid3.jfif" width="250px" height="300px">
+                <h4>Kids dresses</h4>
+                <div class="rating" aria-hidden></div>
+                
+                <p>$20.00</p>
+            </div>
+        </div>
+        
+<!----Spokie and Daughters believe that clothes are more than just that, they are a life style<br>and they not only Cover Us even so 
+        they set the mood of the day and that 
+        is why we say came and Feel like an African Royal.----->
+
+<!----------------------------- footer ------------------------------>
+     <div class="footer">
+        <div class="inner-footer">
+            <div class="social-links">
+                <ul>
+                    <li class="social-item"><a href="https://facebook.com"><img src="images/facebook.png" alt="fb icon"></i></a></li>
+                    <li class="social-item"><a href="https://twitter.com"><img src="images/twitter.png" alt="twitter icon"></i></a></li>
+                    <li class="social-item"><a href="https://instagram.com"> <img src="images/instagram.png" alt="instagram icon"></i></a></li>
+                </ul>
+            </div>
+        
+            <div class="quick-links">
+                <ul>
+                    <li class="quick-items"><a href="index.html">Site Plan</a></p>
+                    <li class="quick-items"><a href="home2.html">Kids and Audults</a></p>
+                    <li class="quick-items"><a href="home3.html">Weddings</a></p>
+                    <li class="quick-items"><a href="#">Contact Us</a></p>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="outer-footer">
+        Spokie and Daughters &copy; 2022 - Noluthando Zilimbola-Mothata 
+    </div>
+</footer>
+</hearder>
 </body>
 </html>
