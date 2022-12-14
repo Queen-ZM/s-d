@@ -103,14 +103,47 @@
             background-attachment: fixed;
             background-size: 100% 100%;
         }
-        .footer {
-            background-color: whitesmoke;
-            padding: 25px 50px;
-            margin-top: 200px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
+        .inner-footer{
+        margin: 0;
+        padding: 0;
+        background-color: #a3769e;
+    }
+    .social-links{
+        display: flex;
+    }
+    .social-links ul{
+        display: flex;
+    }
+    .social-items{
+        list-style: none;
+    }
+    .social-items a{
+        padding: 10px 20px;
+        font-size: 35px;
+    }
+    .quick-links{
+        display: flex;
+    }
+    .quick-links ul{
+        display: flex;
+    }
+
+    .quick-items{
+        list-style: none;
+    } 
+    .quick-items a{
+        text-decoration: none;
+        padding: 0px 15px;
+        font-size: 18px;
+        color: #555;
+    } 
+    .outer-footer{
+        padding: 10px;
+        text-align: center;
+        color: black;
+        font-size: 18px;
+        background-color: #a3769e;
+    }
       
         
         
@@ -173,21 +206,27 @@
     </section>
 </main>
 <footer>
-    <p>Dry Oar &copy; 2022 - Noluthando Zilimbola-Mothata</p>
-    <p><a href="wwr/rivers/index.html">Page 2</a></p>
-    <p><a href="site-plan-rafting.html">Site Plan</a></p>
-    <p><a href="contactus.html">Contact Us</a></p>
-    <p><a href="s&d/index.html">s&d-siteplan</a></p>
-    <div class="social">
-        <a href="https://facebook.com">
-            <img src="wwr/images/facebook.png" alt="fb icon">
-        </a>
-        <a href="https://twitter.com">
-            <img src="wwr/images/twitter.png" alt="twitter icon">
-        </a>
-        <a href="https://instagram.com">
-            <img src="wwr/images/instagram.png" alt="instagram icon">
-        </a>    
+    <div class="quick-links">
+        <ul>
+            <li class="quick-items"></li><a href="wwr/rivers/index.html">Page 2</a></li>
+            <li class="quick-items"></li><a href="site-plan-rafting.html">Site Plan</a></li>
+            <li class="quick-items"></li><a href="contactus.html">Contact Us</a></li>
+            <li class="quick-items"></li><a href="s&d/index.html">s&d-siteplan</a></li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <div class="inner-footer">
+            <div class="social-links">
+                <ul>
+                    <li class="social-item"><a href="https://facebook.com"><img src="wwr/images/facebook.png" alt="fb icon"></i></a></li>
+                    <li class="social-item"><a href="https://twitter.com"><img src="wwr/images/twitter.png" alt="twitter icon"></i></a></li>
+                    <li class="social-item"><a href="https://instagram.com"> <img src="wwr/images/instagram.png" alt="instagram icon"></i></a></li>
+                </ul>
+            </div>
+                    
+    <div class="outer-footer">
+        Spokie and Daughters &copy; 2022 - Noluthando Zilimbola-Mothata 
     </div>
 </footer>
 </body>
