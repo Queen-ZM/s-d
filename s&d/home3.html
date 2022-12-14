@@ -207,6 +207,10 @@
     input:focus{
         outline: none;
     }
+    .single-product .fa{
+        color: #ff523b;
+        margin-left: 10px;
+    }
 
     .small-img-row{
         display: flex;
@@ -221,7 +225,8 @@
 
 /*------------footer ----------*/
 
-    .inner-footer{
+    
+.inner-footer{
         margin: 0;
         padding: 0;
         background-color: #a3769e;
@@ -262,25 +267,7 @@
         font-size: 18px;
         background-color: #a3769e;
     }
-/*------------media query for less than 600 screen size ------*/
-@media only screen and (max-width: 600px){
-    .row{
-        text-align: center;
-    }
-    .col-2, .col-3, .col-4{
-        flex-basis: 100%;
-    }
-    .single-product .row{
-        text-align: left;
-    }
-    .single-product .col-2{
-        padding: 20px 0;
-    }
-    .single-product .h1{
-        font-size: 26px;
-        line-height: 32px;
-    }
-}
+    
 
 
 
@@ -321,20 +308,20 @@
         <div class="small-container single-product">
         <div class="row">
             <div class="col-2">
-                <img src="images/IMG-20221105-WA0017.jpg" width="100%" id="product-img">
+                <img src="images/suits.webp" width="100%" id="product-img">
             
             <div class="small-img-row">
               <div class="small-img-row-col">
-                <img src="images/bride3.jfif" width="100%" class="small-img">
+                <img src="images/suits1.jpg" width="100%" class="small-img">
               </div>
               <div class="small-img-row-col">
-                <img src="images/bride3.jfif" width="100%" class="small-img">
+                <img src="images/suits2.webp" width="100%" class="small-img">
               </div>
               <div class="small-img-row-col">
-                <img src="images/bride3.jfif" width="100%" clas="small-img">
+                <img src="images/suits3.webp" width="100%" clas="small-img">
               </div>
               <div class="small-img-row-col">
-                <img src="images/bride3.jfif" width="100%" class="small-img">
+                <img src="images/suits4.webp" width="100%" class="small-img">
               </div>
             </div>
 
@@ -381,28 +368,28 @@
 
         <div class="row">
             <div class="col-4">
-                <img src="images/IMG-20221105-WA0023.jpg" width="250px" height="300px">
-                <h4>Bridal Dress</h4>
+                <img src="images/IMG-20221105-WA0050 - Copy - Copy.jpg" width="250px" height="300px">
+                <h4> Traditional Bridal Dress</h4>
                 <p>$150.00</p>
             </div>
             <div class="col-4">
-                <img src="images/IMG-20221105-WA0039.jpg" width="250px" height="300px">
-                <h4>Couples Wear</h4>
-                <p>$110.00</p>
+                <img src="images/IMG-20221105-WA0028.jpg" width="250px" height="300px">
+                <h4>Dressr</h4>
+                <p>$95.00</p>
             </div>
             <div class="col-4">
-                <img src="images/IMG-20221105-WA0034.jpg" width="250px" height="300px">
-                <h4>All in one for Females</h4>
+                <img src="images/IMG-20221105-WA0010.jpg" width="250px" height="300px">
+                <h4>Modern Wedding dress</h4>
                 <div class="rating" aria-hidden></div>
                 
                 <p>$85.00</p>
             </div>
             <div class="col-4">
-                <img src="images/kid3.jfif" width="250px" height="300px">
-                <h4>Kids dresses</h4>
+                <img src="images/bride6.jfif" width="250px" height="300px">
+                <h4>Xhosa Outfits</h4>
                 <div class="rating" aria-hidden></div>
                 
-                <p>$20.00</p>
+                <p>$300.00</p>
             </div>
         </div>
         
@@ -435,6 +422,31 @@
         Spokie and Daughters &copy; 2022 - Noluthando Zilimbola-Mothata 
     </div>
 </footer>
-</hearder>
+</heard>
+
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function()
+       {
+           ProductImg.src = SmallImg[0].src;
+       }  
+    SmallImg[1].onclick = function()
+       {
+           ProductImg.src = SmallImg[1].src;
+       }
+    SmallImg[2].onclick = function()
+       {
+           ProductImg.src = SmallImg[2].src;
+       }
+    SmallImg[3].onclick = function()
+       {
+           ProductImg.src = SmallImg[3].src;
+       }
+    
+</script>
+
+
 </body>
 </html>

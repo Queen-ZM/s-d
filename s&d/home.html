@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     <title>Home</title>
 <style>
+    /*----------------- Home ---------------*/
     *{
         margin: 0;
         padding: 0;
@@ -72,7 +73,21 @@
     .col-2 h1{
         font-size: 50px;
         line-height: 60px;
-        margin: 25px 0;
+        padding: 25px 0;
+    
+    }
+    .btn{
+        display: inline-block;
+        background: #ff523b;
+        color: #fff;
+        padding: 8px 30px;
+        margin: 30px 0;
+        border-radius: 30px;
+        transition: background 0.5;
+
+    }
+    .btn:hover{
+        background: #563434;
     }
     .header{
         background: radial-gradient(#fff, #ffd6d6);
@@ -116,7 +131,7 @@
         color: #555;
     }
     title::after{
-        content: "";
+        content: '';
         background: #ff523b;
         width: 80px;
         height: 5px;
@@ -136,8 +151,16 @@
     .col-4:hover{
         transform: translateY(-5px);
     }
-    .rating .fa{
-       color: #ff523b; 
+    .offer{
+        background: radial-gradient(#fff, #ffd6d6);
+        margin-top: 80px;
+        padding: 30px 0;
+    }
+    .col-2 .offer_img{
+        padding: 50px;
+    }
+    .small{
+        color: #555;
     }
     p{
         color: rgb(123, 116, 116);
@@ -254,6 +277,7 @@
             with a way to combine western and traditional attire to be one<br>
             so that we can make you that african royal.</p>
 
+            <a href="" class="btn">Shop Now &#8594;</a>
         </div>
         <div class="col-2">
             <img src="images/xhosa.jpg">
@@ -289,45 +313,25 @@
             <div class="col-4">
                 <img src="images/IMG-20221105-WA0023.jpg" width="250px" height="300px">
                 <h4>Bridal Dress</h4>
-                <div class="rating" aria-hidden></div>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+
                 <p>$150.00</p>
             </div>
             <div class="col-4">
                 <img src="images/IMG-20221105-WA0039.jpg" width="250px" height="300px">
                 <h4>Couples Wear</h4>
-                <div class="rating" aria-hidden></div>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <p>$110.00</p>
+
+               <p>$110.00</p>
             </div>
             <div class="col-4">
                 <img src="images/IMG-20221105-WA0027.jpg" width="250px" height="300px">
                 <h4>All in one for Females</h4>
-                <div class="rating" aria-hidden></div>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+               
                 <p>$85.00</p>
             </div>
             <div class="col-4">
                 <img src="images/kid3.jfif" width="250px" height="300px">
                 <h4>Kids dresses</h4>
-                <div class="rating" aria-hidden></div>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+               
                 <p>$20.00</p>
             </div>
         </div>
@@ -336,49 +340,48 @@
             <div class="col-4">
                 <img src="images/IMG-20221105-WA0002 - Copy.jpg" width="250px" height="300px">
                 <h4>Semiformal Dress</h4>
-                <div class="rating" aria-hidden></div>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+               
                 <p>$20.00</p>
             </div>
             <div class="col-4">
                 <img src="images/IMG-20221105-WA0041.jpg" width="250px" height="300px">
                 <h4>Couples</h4>
-                <div class="rating" aria-hidden></div>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+                
                 <p>$70.00</p>
             </div>
             <div class="col-4">
                 <img src="images/kid.jfif" width="250px" height="300px">
                 <h4>Kiddies Dress</h4>
-                <div class="rating" aria-hidden></div>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+                
                 <p>$15.00</p>
             </div>
             <div class="col-4">
                 <img src="images/IMG-20221105-WA0019.jpg" width="250px" height="300px">
                 <h4>Female Blazer</h4>
-                <div class="rating" aria-hidden></div>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+               
                 <p>$60.00</p>
             </div>
-
+        </div>
     </div>
+
+<!------------------ offer -------------------->
+     <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                  <img src="images/beads1.jpg" class="offer-img">
+                </div>  
+                <div class="col-2">
+                    <p>Available Also at S&D</p>
+                    <h1>Beads</h1>
+                    <small>We also provide traditional accessory that goes well with anything and everything </small>
+                    <a href="" class="btn">Buy Now &#8594;</a>
+                </div>
+
+        </div>
+     </div>
+
+
 
     <!----Spokie and Daughters believe that clothes are more than just that, they are a life style<br>and they not only Cover Us even so 
         they set the mood of the day and that 
@@ -410,6 +413,8 @@
     </div>
 </footer>
 </hearder>
+
+ 
 </body>
 </html>
 
